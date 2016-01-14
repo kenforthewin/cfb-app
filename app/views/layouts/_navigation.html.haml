@@ -1,0 +1,14 @@
+%header.navbar
+  %nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        %button.navbar-toggle{ :type => "button", :"data-toggle" => "collapse", :"data-target" => ".navbar-collapse" }
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav.navbar-left
+          %li
+            = link_to root_path, html_options = {:class =>'navbar-brand'} do
+              %b CFB

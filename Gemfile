@@ -46,3 +46,5 @@ gem 'haml-rails'
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'annotate', ">=2.6.0"
+gem 'httparty'
+gem 'pry'
