@@ -48,3 +48,5 @@ gem 'simple_form'
 gem 'annotate', ">=2.6.0"
 gem 'httparty'
 gem 'pry'
+gem 'bootstrap-datepicker-rails'
+gem "font-awesome-rails"

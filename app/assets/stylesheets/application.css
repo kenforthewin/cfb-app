@@ -11,5 +11,10 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require bootstrap-datepicker3
+ *= require font-awesome
  *= require_self
  */
+
+
+.table-borderless td, .table-borderless th { border: 0 !important;}

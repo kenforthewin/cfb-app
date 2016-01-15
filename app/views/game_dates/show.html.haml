@@ -1,0 +1,7 @@
+.row
+  .col-md-12
+    %h2= @date_format
+    %br
+    - @games.each do |game|
+      = render 'games/show', {game: game[:game], home_team: game[:home_team], away_team: game[:away_team]}
+      %br

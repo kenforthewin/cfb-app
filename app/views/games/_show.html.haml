@@ -1,0 +1,43 @@
+.panel.panel-default
+  .panel-heading #{away_team.name} @ #{home_team.name}
+  .panel-body
+    %table.table
+      %tr
+        %th Date
+        %td= game.date
+      %tr
+        %th Winner
+        %td
+          - if game.winner == 'away'
+            = away_team.name
+          - else
+            = home_team.name
+      %tr
+        %th Score
+        %td #{game.home_score} - #{game.away_score}
+      %tr
+        %th Home Team
+        %td
+          %table.table.table-borderless
+            %tr
+              %th Name
+              %td= home_team.display_name
+            %tr
+              %th Location
+              %td= home_team.location
+            %tr
+              %th Conference
+              %td= home_team.conference
+      %tr
+        %th Away Team
+        %td
+          %table.table.table-borderless
+            %tr
+              %th Name
+              %td= away_team.display_name
+            %tr
+              %th Location
+              %td= away_team.location
+            %tr
+              %th Conference
+              %td= away_team.conference
